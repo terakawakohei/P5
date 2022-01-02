@@ -15,7 +15,7 @@ function draw() {
   line(offset, height / 2, width - offset, height / 2);
   stroke(30);
   strokeWeight(weight);
-  //上方向と下方向にforを回す
+  //上方向と下方向にfrを回す
   //上側
   let upperValue = 30;
   for (let upper = center; upper > offset; upper -= 10) {
@@ -32,7 +32,6 @@ function draw() {
     line(offset, lower, width - offset, lower);
     stroke(lowerValue);
 
-    strokeWeight(weight);
     lowerValue += 10;
     if (lowerValue > bgNum) break;
   }
